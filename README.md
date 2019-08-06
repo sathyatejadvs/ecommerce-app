@@ -1,24 +1,30 @@
-# README
+# Ecommerce Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Stacks
 
-Things you may want to cover:
+	1.
+		- Twitter Bootstrap,
+		- Html, 
+		- Css, 
+		- JavaScript
+	2.
+		- Ruby,
+		- Rails
+		- Mongodb,
+		- Unit and Integration tests
 
-* Ruby version
+## Functionality
 
-* System dependencies
+	1. Build an admin interface to create product listing
+	2. Building an home page
+    1. A Banner
+    2. Product listing
+    
+	3. Product details page
+    - It has product images, title, description, Price
+    - title: not empty, uniq
+    - price: non zero, float, non empty
+    - description: non empty
+    - title and price combination should be uniq
+ 	4. clicking on the thumbnail should show the product image in a original image in 		a modal/lightbox.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

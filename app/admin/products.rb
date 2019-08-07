@@ -6,10 +6,15 @@ ActiveAdmin.register Product do
   permit_params :title, :description, :price, :main_image, :thumb_image
   
   config.filters = false
-  # permit_params do
-  #   permitted = [:permitted, :attributes]
-  #   permitted << :other if params[:action] == 'create' && current_user.admin?
-  #   permitted
-  # end
-  
+
+  index as: :grid do |product|
+    	
+  end
+
+  ActiveAdmin.setup do |config|  
+  	config.footer = 'Ecommerce Application'
+    config.download_links = false
+  	config.batch_actions = false
+  end
+    
 end

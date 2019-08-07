@@ -26,5 +26,5 @@
     - price: non zero, float, non empty
     - description: non empty
     - title and price combination should be uniq
- 	4. clicking on the thumbnail should show the product image in a original image in 		a modal/lightbox.
+ 	4. clicking on the thumbnail should show the product image in a original image in a modal/lightbox.
 

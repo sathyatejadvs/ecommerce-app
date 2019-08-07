@@ -19,4 +19,16 @@
 
 # 	})
 #end
- AdminUser.create!(email: 'daggubatisatyateja@gmail.com', password: 'ssssss', password_confirmation: 'ssssss') if Rails.env.development?
+ # AdminUser.create!(email: 'daggubatisatyateja@gmail.com', password: 'ssssss', password_confirmation: 'ssssss') if Rails.env.development?
+
+1.times do |product_item|
+Product.create!(
+	title: "portfolio title #{product_item}",
+	description: "Angular",
+	price: "370.00",
+	main_image: "http://placehold.it/600x400" ,
+	thumb_image: "http://placehold.it/350x150"
+
+	)
+end
+puts "product is executed"

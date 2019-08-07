@@ -6,6 +6,7 @@ ActiveAdmin.register Product do
   permit_params :title, :description, :price, :main_image, :thumb_image
   #
   # or
+ 
   #
   # permit_params do
   #   permitted = [:permitted, :attributes]

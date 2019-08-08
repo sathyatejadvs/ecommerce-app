@@ -5,4 +5,8 @@ class Product
   field :price, type: Float
   field :main_image, type: String
   field :thumb_image, type: String
+
+  validates :title, :price, :description, presence: true
+  validates :title, uniqueness: true
+  validates :price, uniqueness: true
 end

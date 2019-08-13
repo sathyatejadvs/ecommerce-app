@@ -1,0 +1,35 @@
+ @import 'bootstrap';
+ img {
+ 	    width: inherit;
+ }
+
+
+ .carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible; 
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+  carousel-item: image-url('carousel1.png') no-repeat;
+    carousel-item: image-url('carousel2.png') no-repeat;
+  carousel-item: image-url('carousel3.png') no-repeat;
+
+}

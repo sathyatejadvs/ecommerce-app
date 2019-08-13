@@ -1,0 +1,7 @@
+<div class= "card" id= "<%= product.id %>">
+  <%= image_tag product_image(product.thumb_image_url, 'thumb') unless product.thumb_image.nil? %>
+  <p class= "card-text">
+  	<span><%= link_to product.title, product_path(product) %></span>
+   </p>
+</div>  
+

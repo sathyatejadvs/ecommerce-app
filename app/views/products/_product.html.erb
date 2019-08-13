@@ -1,5 +1,6 @@
 <div class= "card">
-	<img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+  	<%= image_tag product_image(product.main_image_url, 'thumb')  %>
+
 		<p class= "card-text">
 			<span><%= link_to product.title, product_path(product) %></span>
 			<p><span>Price: $<%= link_to product.price, product_path(product) %></span></p>

@@ -6,7 +6,8 @@ class Product
   field :main_image, type: String
   field :thumb_image, type: String
 
-   mount_uploaders :images, ImageUploader
+  mount_uploader :thumb_image, ImageUploader
+  mount_uploader :main_image, ImageUploader
 
   validates :title, :price, :description, presence: true
   validates :title, uniqueness: true

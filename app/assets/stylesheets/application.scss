@@ -1,7 +1,5 @@
  @import 'bootstrap';
- img {
- 	    width: inherit;
- }
+
 
 
  .carousel {
@@ -36,7 +34,7 @@
 
 .card {
   float: left;
-  width: 33.333%;
+  width: 22.3%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
@@ -49,3 +47,4 @@
 .card-text {
   font-size: 85%;
 }
+

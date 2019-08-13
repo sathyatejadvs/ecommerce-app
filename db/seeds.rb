@@ -23,11 +23,11 @@
 
 1.times do |product_item|
 Product.create!(
-	title: "portfolio title #{product_item}",
-	description: "Angular",
-	price: "370.00",
+	title: "product title #{product_item}",
+	description: "ruby",
+	price: "370.11",
 	main_image: "http://placehold.it/600x400" ,
-	thumb_image: "http://placehold.it/350x150"
+	thumb_image: "http://placehold.it/350x200"
 
 	)
 end

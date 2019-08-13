@@ -1,0 +1,13 @@
+<div class="col-xl-12 col-lg-12">
+	<div class="card text-center">
+		<div class="card-content">
+			<a href= "/products/<%=product.id%>"><%= image_tag product_image(product.main_image_url, 'main'), class: "card-img-top img-fluid" %></a>
+			<div class="card-body">
+				<h4 class="card-title">
+  					<span><%= link_to product.title, product_path(product) %></span>
+				</h4>
+				<p><span >Price: $<%= link_to product.price, product_path(product) %></span></p>
+			</div>
+		</div>
+	</div>
+</div>

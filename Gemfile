@@ -36,8 +36,14 @@ gem 'activeadmin-mongoid'
 gem 'ransack-mongoid', github: 'activerecord-hackery/ransack-mongoid'
 gem 'devise'
 
-#Gem for UserInterface
+# Gem for UserInterface
 gem 'bootstrap', '~> 4.3.1'
+
+# For image uploading
+gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
 
 
 group :development, :test do

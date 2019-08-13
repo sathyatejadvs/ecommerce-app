@@ -6,7 +6,9 @@ class Product
   field :main_image, type: String
   field :thumb_image, type: String
 
+   mount_uploaders :images, ImageUploader
+
   validates :title, :price, :description, presence: true
   validates :title, uniqueness: true
-  validates :price, uniqueness: true, format: { with: /\A\d+(?:\.\d{2})?\z/ }, acceptance: { message: 'must be Float' }, numericality: { greater_than: 0, less_than: 1000000 }
+  validates :price, uniqueness: true, format: { with: /\A\d+(?:\.\d{2})?\z/ }, numericality: { greater_than: 0, less_than: 1000000 }
 end

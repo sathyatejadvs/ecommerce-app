@@ -27,13 +27,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :main_image %>
-    <%= form.file_field :main_image%>
+    <%=form.label :main_image %>
+    <%= image_tag form.file_field :main_image, multiple: true %>
   </div>
 
   <div class="field">
     <%= form.label :thumb_image %>
-    <%= form.file_field :thumb_image %>
+    <%= form.file_field :thumb_image, multiple: true  %>
   </div>
 
   <div class="actions">

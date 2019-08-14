@@ -35,6 +35,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'activeadmin-mongoid'
 gem 'ransack-mongoid', github: 'activerecord-hackery/ransack-mongoid'
 gem 'devise'
+gem 'magnifier-rails'
 
 # Gem for UserInterface
 gem 'bootstrap', '~> 4.3.1'

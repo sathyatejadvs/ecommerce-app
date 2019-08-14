@@ -1,1 +1,65 @@
 @import 'bootstrap';
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible; 
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+  carousel-item: image-url('carousel1.png') no-repeat;
+    carousel-item: image-url('carousel2.png') no-repeat;
+  carousel-item: image-url('carousel3.png') no-repeat;
+
+}
+
+/* Bootstrap cards*/
+
+.card {
+  float: left;
+  width: 22.3%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+/* Style for Header*/
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}

@@ -29,25 +29,39 @@
   carousel-item: image-url('carousel3.png') no-repeat;
 
 }
+.carousel-item img {
+  object-fit: cover;
+}
 
 /* Bootstrap cards*/
 
 .card {
   float: left;
-  width: 22.3%;
-  padding: .75rem;
+  width: auto;
+  padding: 0.75rem;
   margin-bottom: 2rem;
   border: 0;
+  height: auto;
 }
+
 
 .card > img {
   margin-bottom: .75rem;
+
+}
+div .card {
+  border: none;
 }
 
 .card-text {
-  font-size: 85%;
+  font-size: 88%;
 }
-
+.card img {
+    border-style: none;
+    height: 20rem;
+    width: 12rem;
+    object-fit: contain;
+  }
 
 /* Style for Header*/
 
@@ -68,4 +82,9 @@
 .img-back {
 	height: 25rem;
 	width: 18rem;
+}
+
+
+.card-deck{
+    bottom-margin: 10px;
 }

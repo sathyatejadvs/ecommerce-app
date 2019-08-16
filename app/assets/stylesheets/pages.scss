@@ -14,7 +14,7 @@ body {
   padding-top: 8rem;
   padding: 6rem;
   text-align: center;
-  color: #931A1A;
+  color: white;
   margin-top:  6rem;
 }
 #background-image {
@@ -28,12 +28,42 @@ body {
   z-index: -400;
   -webkit-transform: translateX(-30%) translateY(-70%);
   transform: translateX(-50%) translateY(-50%);
-  background-image: url("https://www.lifeofpix.com/wp-content/uploads/2019/02/308-name06330-jj-1600x805.jpg");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43Sn5eJwJTr0WfGyVG6Be7mTJ5-pvJyvL_QxKo38bogFhDDW1xw");
   background-size: cover;
 }
 @media  (max-width: 768px) {
-   .container {
-   	text-align: center;
-   	position: fixed;
-   }
-  }
+.container {
+	text-align: center;
+	position: fixed;
+}
+}
+
+.row img {
+	margin-top: -11rem;
+}
+
+@media only (max-device-width: 370px) {
+	.col-md-9 {
+		font-size: 1rem;
+	}
+
+}  
+@media only (max-device-width: 412px) {
+	.col-md-9 {
+		font-size: 1rem;
+	}
+
+}
+
+.contact {
+	margin-top: 4rem;
+	color: white;
+
+}
+
+hr {
+ height: 1px;
+  color: white;
+  background-color: white;
+  border: none;
+}

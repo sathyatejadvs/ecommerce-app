@@ -42,23 +42,13 @@ body {
 	margin-top: -11rem;
 }
 
-@media only (max-device-width: 370px) {
-	.col-md-9 {
-		font-size: 1rem;
-	}
-
-}  
-@media only (max-device-width: 412px) {
-	.col-md-9 {
-		font-size: 1rem;
-	}
-
-}
 
 .contact {
 	margin-top: 4rem;
 	color: white;
-
+}
+.contact a {
+  color: black;
 }
 
 hr {
@@ -66,4 +56,25 @@ hr {
   color: white;
   background-color: white;
   border: none;
+}
+@media only (min-width: 319px) and (max-width: 375px) {
+  .home {
+    margin-top: 2rem;
+  }
+
+}
+
+@media only (min-width: 767px) and (max-width: 769px) {
+  .home {
+    margin: 12rem;
+  }
+
+}
+
+@media only (min-width: 315px) and (max-width: 376px) {
+  .contact iframe{
+    height: 9rem;
+    width: 9rem;
+  }
+
 }

@@ -28,7 +28,7 @@ test:
 production:
   clients:
     default:
-      database: ecommerce_app_production
+      database: <%= ENV['DB_NAME'] %>
       hosts: <%= ENV['DB_URL'] %>
       options:
         read:

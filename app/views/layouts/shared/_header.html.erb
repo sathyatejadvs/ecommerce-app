@@ -13,12 +13,17 @@
           <a class="nav-link active" href="/products/">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">About</a>
+          <a class="nav-link " href="/pages/contact">Contact</a>
         </li>
+       
         <li class="nav-item">
-          <a class="nav-link " href="#">Cart</a>
+          <a class="nav-link " href="/pages/cart/">Cart</a>
         </li>
       </ul>
+
+      <% if current_user %>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "nav-link logout-link" %>
+      <% end %>
      
     </div>
   </nav>

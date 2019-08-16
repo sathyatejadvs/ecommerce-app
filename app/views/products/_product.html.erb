@@ -1,10 +1,8 @@
-<div class= "card mr-auto">
-  <a href= "/products/<%=product.id%>" class='text-center'>
-    <%= image_tag product_image(product.main_image_url, 'main'), class: 'img-fluid' %>
-  </a>
-  <p class= "card-text">
-    <span ><%= link_to product.title, product_path(product) %></span>
-    <p><span style="color:blue ">Price: $<%= link_to product.price, product_path(product), style: "color:blue" %></span></p>
-  </p>
+<div class= "card text-center ml-5">
+	<a href= "/products/<%=product.id%>"><%= image_tag product_image(product.main_image_url, 'main') %></a>
+	<p class= "card-text">
+		<span ><%= link_to product.title, product_path(product) %></span>
+		<p><span style="color:black ">Price: $<%= link_to product.price, product_path(product), style: "color:black" %></span></p>
+	</p>
 </div>
 

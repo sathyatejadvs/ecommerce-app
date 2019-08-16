@@ -1,18 +1,17 @@
 <div class= "row mt-2">
 
-	<div class= "col-12 col-sm-7 col-md-7">
+	<div class= "col-12 col-sm-7 col-md-7 show-banner">
 		<%= render "layouts/shared/products_banner" %>
 		<div class= "row">
-			<button class="btn btn-warning ml-1 ">
-				ADD TO CART
-			</button>
+			
+			<%= link_to "ADD TO CART", new_user_session_path, class: "btn btn-warning ml-1 "%>
 			<button class="btn btn-info ml-auto" type="button">
 				BUY NOW
 			</button>
 		</div>
 	</div>
 
-	<div class= "col-12 col-sm-4 col-md-4">
+	<div class= "col-12 col-sm-4 col-md-4 show">
 		<h3>Title: </h3>
 		<p><%= @product.title %></p>
 		<hr>

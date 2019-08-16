@@ -29,8 +29,7 @@ production:
   clients:
     default:
       database: ecommerce_app_production
-      hosts:
-        - localhost:27017
+      hosts: mongodb://ecapp-sathya:tgZ6Ma@4vLHs2T6@ds163757.mlab.com:63757/heroku_n92k76l2
       options:
         read:
           mode: :primary

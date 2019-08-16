@@ -1,13 +1,26 @@
  @import 'bootstrap';
 
 /* Style for Header*/
-
-#navbarCollapse .navbar-nav li a {
-  color: #999;
-  transition: ease-in-out color .15s;
+.login-links {
+  text-align: center;
+  margin-top: 4rem;
 }
-#navbarCollapse .navbar-nav li a:hover, #navbarCollapse .navbar-nav li a.active {
-  color: #fff;
-  text-decoration: none;
-} 
+.auth-links {
+  color: black;
+}
 
+.login > .card-block {
+  width: 22rem;
+  margin: 0 auto;
+}
+.shared-links {
+  color: black;
+}
+.login-links {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.logout-link {
+	color: white;
+}

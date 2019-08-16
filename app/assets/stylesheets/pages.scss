@@ -50,16 +50,25 @@ body {
 .contact a {
   color: black;
 }
-
+.about {
+  color: white;
+}
 hr {
  height: 1px;
   color: white;
   background-color: white;
   border: none;
 }
+
 @media only (min-width: 319px) and (max-width: 375px) {
   .home {
     margin-top: 2rem;
+  }
+  .about .col-md-9 {
+    margin-top: 2rem;
+  }
+  .checkout {
+  padding: 3rem;
   }
 
 }
@@ -76,5 +85,10 @@ hr {
     height: 9rem;
     width: 9rem;
   }
-
+  .about .col-md-9 {
+    color: #F5DBDB;
+  }
+}
+h3, table, th, tr, td{
+  color:white;
 }

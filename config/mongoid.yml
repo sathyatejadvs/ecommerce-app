@@ -29,7 +29,7 @@ production:
   clients:
     default:
       database: <%= ENV['DB_NAME'] %>
-      hosts: <%= ENV['DB_URL'] %>
+      hosts: <%= ENV['MONGODB_URI'] %>
       options:
         read:
           mode: :primary

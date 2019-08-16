@@ -19,7 +19,7 @@
 
 # 	})
 #end
- # AdminUser.create!(email: 'daggubatisatyateja@gmail.com', password: 'ssssss', password_confirmation: 'ssssss') if Rails.env.development?
+ AdminUser.create(email: 'admin@trikatechnologies.com', password: 'ssssssss', password_confirmation: 'ssssssss')# if Rails.env.development?
 
 1.times do |product_item|
 Product.create!(

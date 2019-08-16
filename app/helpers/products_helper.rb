@@ -13,5 +13,5 @@ module ProductsHelper
 			image_generator(height: 350 , width: 200)
 		end
 	end
-
 end
+

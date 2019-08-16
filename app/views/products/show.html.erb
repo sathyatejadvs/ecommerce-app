@@ -1,6 +1,6 @@
 <div class= "row mt-2">
 
-	<div class= "col-md-8">
+	<div class= "col-12 col-sm-7 col-md-7">
 		<%= render "layouts/shared/products_banner" %>
 		<div class= "row">
 			<button class="btn btn-warning ml-1 ">
@@ -12,15 +12,15 @@
 		</div>
 	</div>
 
-	<div class= "col-md-4">
+	<div class= "col-12 col-sm-4 col-md-4">
 		<h3>Title: </h3>
-		<hr>
 		<p><%= @product.title %></p>
 		<hr>
 		<h3>Description: </h3>
-		<p><%= @product.description %></p>
 		<hr>
+		<p><%= @product.description %></p>
 		<h3>Price: </h3>
+		<hr>
 		<p>$<%= @product.price %></p>
 
 		<%= link_to 'Back', products_path %>

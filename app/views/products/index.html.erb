@@ -1,8 +1,17 @@
 <h1>Products</h1>
 <!-- banner -->
-<%= render "layouts/shared/banner" %>
-<div class= "container">
-<%= render partial: 'product', collection: @products %>
+<div class= "row">
+  <div class="col-12">
+    <%= render "layouts/shared/banner" %>
+  </div>
+</div>
+
+<div class= "row">
+  <div class="col-12">
+    <div class="card-columns">
+      <%= render partial: 'product', collection: @products %>
+    </div>
+  </div>
 </div>
 
 

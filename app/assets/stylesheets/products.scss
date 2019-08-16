@@ -9,15 +9,15 @@
   bottom: 3rem;
 }
 
-  .carousel-item {
-    height: 32rem;
-    background-color: #777;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible; 
-  }
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible; 
+}
 .carousel-item > img {
   position: absolute;
   top: 0;
@@ -25,7 +25,7 @@
   min-width: 100%;
   height: 32rem;
   carousel-item: image-url('carousel1.png') no-repeat;
-    carousel-item: image-url('carousel2.png') no-repeat;
+  carousel-item: image-url('carousel2.png') no-repeat;
   carousel-item: image-url('carousel3.png') no-repeat;
 
 }
@@ -33,22 +33,13 @@
   object-fit: cover;
 }
 
-/* Bootstrap cards*/
- .card {
-    float: left;
-    width: auto;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border: 0;
-    height: auto;
-  }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+and (min-device-width: 768px) 
+and (-webkit-min-device-pixel-ratio: 2) {
   .card {
     float: left;
     width: auto;
@@ -67,9 +58,48 @@
   }
 }
 
+
+@media screen and (max-width:513px) {
+  .card {
+    margin-bottom: 2rem;
+    border: 0;
+    height: auto;
+    margin-left: 1rem;
+  }
+
+  .card > img {
+    margin-bottom: .75rem;
+  }
+  div .card {
+    border: none;
+  }
+}
+
+
 @media only screen 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+  .card {
+    float: left;
+    width: auto;
+    padding: 0rem  ;
+    margin-bottom: 2rem;
+    border: 0;
+    height: auto;
+    margin-left: 1rem;
+  }
+
+  .card > img {
+    margin-bottom: .75rem;
+
+  }
+  div .card {
+    border: none;
+  }
+}
+@media only screen 
+and (max-device-width: 5036px) 
+and (-webkit-min-device-pixel-ratio: 2) {
   .card {
     float: left;
     width: auto;
@@ -90,16 +120,6 @@
 }
 
 
-.card-text {
-  font-size: 88%;
-}
-.card img {
-    border-style: none;
-    height: 12rem;
-    width: 12rem;
-    object-fit: contain;
-  }
-
 /* Style for Header*/
 
 .site-header {
@@ -117,6 +137,6 @@
 }
 
 .img-back {
-	height: 25rem;
-	width: 18rem;
+  height: 25rem;
+  width: 18rem;
 }

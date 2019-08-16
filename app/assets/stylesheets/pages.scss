@@ -1,26 +1,39 @@
 @import 'bootstrap';
 
-#hero {
-	background-image: url("https://www.lifeofpix.com/wp-content/uploads/2019/02/308-name06330-jj-1600x805.jpg");
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-	top: 0;
-	bottom: 0;
-	height: 100vh;
-	z-index: -10;
+html,
+body {
+  height: 100%;
+}
+body {
+  text-align: center;
+}
 
-}
-#hero-overlay {
-	position: absolute;
-	background-color: rgba(0,0,0,0.5);
-	top: 0;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
-	z-index: -5;
 
+/* Padding for spacing */
+.inner {
+  padding-top: 8rem;
+  padding: 6rem;
+  text-align: center;
+  color: #B85A46;
+  margin-top:  6rem;
 }
-.row {
-	margin-top: 8rem;
+#background-image {
+  position :fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -400;
+  -webkit-transform: translateX(-30%) translateY(-70%);
+  transform: translateX(-50%) translateY(-50%);
+  background-image: url("https://www.lifeofpix.com/wp-content/uploads/2019/02/308-name06330-jj-1600x805.jpg");
+  background-size: cover;
 }
+@media  (max-width: 768px) {
+   .container {
+   	text-align: center;
+   	position: fixed;
+   }
+  }

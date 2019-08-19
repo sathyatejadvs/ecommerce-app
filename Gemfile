@@ -36,7 +36,7 @@ gem 'activeadmin-mongoid'
 gem 'ransack-mongoid', github: 'activerecord-hackery/ransack-mongoid'
 gem 'devise'
 gem 'magnifier-rails'
-
+gem 'active_skin'
 # Gem for UserInterface
 gem 'bootstrap', '~> 4.3.1'
 

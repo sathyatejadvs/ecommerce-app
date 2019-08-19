@@ -1,27 +1,12 @@
-<h3 class="mt-6">Items in Cart</h3>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Book</th>
-      <th scope="col">Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Once Upon an Algorithm</td>
-      <td>$12.56</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Learn Rails-5.2</td>
-      <td>$124.56</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Chasing New Horizons</td>
-      <td>$34.55</td>
-    </tr>
-  </tbody>
-</table>
+<main role="main" class="inner cover col-sm-6 col-md-6 col-xs-6 col-lg-12 home">
+  <h1 class="cover-heading" >My Cart Items</h1>
+  <hr>
+  <p class="lead" style= "font-style: oblique;">
+  <p class="lead">
+  	 <% if current_user %>
+  	 	<%= %> 
+  	 <% else %>
+  		<%= link_to "Log in", new_user_session_path, class: "btn btn-primary"%>
+     <% end %>
+  </p>
+</main>

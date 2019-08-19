@@ -39,6 +39,7 @@ gem 'magnifier-rails'
 gem 'active_skin'
 # Gem for UserInterface
 gem 'bootstrap', '~> 4.3.1'
+gem "font-awesome-rails"
 
 # For image uploading
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'

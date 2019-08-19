@@ -16,6 +16,14 @@
 //= require turbolinks
 //= require_tree .
 
-	$('document').ready(function(){
-		('#img').magnifier();
+$(document).ready(function() {
+
+	login();
+
+});
+
+function login() {
+	$('#new_user').submit(function() {
+		console.log ("entered ")
 	});
+}

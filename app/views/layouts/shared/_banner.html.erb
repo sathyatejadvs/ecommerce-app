@@ -15,7 +15,13 @@
               <div style="color: white;">
                 <h3 >Top Rated Books</h3>
                 <p>“Never trust anyone who has not brought a book with them.” – Lemony Snicket</p>
-                <p><a class="btn btn-sm btn-primary" href="#" role="button">Sign up today</a></p>
+                <p> 
+                  <% if current_user %>
+                  <%= %>
+                  <% else %>
+                  <%= link_to "Sign up today", new_user_registration_path, class:"btn btn-sm btn-primary" %>
+                  <% end %>
+                  </p>
               </div>
             </div>
           </div>

@@ -21,8 +21,3 @@
 #end
  AdminUser.create(email: 'admin@trikatechnologies.com', password: 'ssssssss', password_confirmation: 'ssssssss')# if Rails.env.development?
 
-1.times do |product_item|
-Product.create!(title: "product title #{product_item}", description: "ruby", price: "370.11", main_image: "http://placehold.it/600x400" , thumb_image: "http://placehold.it/350x200")
-end
-puts "product is executed"
-

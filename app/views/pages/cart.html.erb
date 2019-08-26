@@ -1,12 +1,36 @@
-<main role="main" class="inner cover col-sm-6 col-md-6 col-xs-6 col-lg-12 home">
-  <h1 class="cover-heading" >My Cart Items</h1>
-  <hr>
-  <p class="lead" style= "font-style: oblique;">
-  <p class="lead">
-  	 <% if current_user %>
-  	 	<%= %> 
-  	 <% else %>
-  		<%= link_to "Log in", new_user_session_path, class: "btn btn-primary"%>
-     <% end %>
-  </p>
-</main>
+<div class= "contact">
+
+	<div class="row">
+
+      <% if current_user %>
+			<div class="col-12 col-md-8 col-sm-6 col-lg-6 text-center" style="border-color: white; color: white;">
+				My Cart Items
+				<hr>
+			</div>
+			<div class="col-6 col-md-4 text-center" id= "address">
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addressModel">
+				 Add Address
+				</button>
+
+
+			  <!-- Modal -->
+			  <div class="modal fade" data-backdrop="static" id="addressModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			    <div class="modal-dialog modal-dialog-centered" role="document">
+			      <%= render 'addresses/form', address: @address, remote: true %>
+			    </div>
+			  </div>
+
+			</div>
+		<% else %>
+			<div class="col-12 col-md-8 col-sm-6 col-lg-8 text-center" style="border-color: white; color: white;">
+				My Cart Items
+				<hr>
+			</div>
+			<div class="col-md-4 text-center">
+			 <%= link_to "Login", new_user_session_path, class: "btn btn-primary text-center" %>
+			</div>
+		<% end %>
+
+	</div>
+</div>
+

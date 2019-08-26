@@ -8,5 +8,9 @@ class ProductTest < ActiveSupport::TestCase
     assert_not Product.new(title:"").save
    end  
 
+   test "product without description" do 
+    product = Product.new
+    assert_not product.save, "Product saved without title"
+   end 
 
 end

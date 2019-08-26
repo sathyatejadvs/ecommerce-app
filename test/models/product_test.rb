@@ -8,6 +8,12 @@ class ProductTest < ActiveSupport::TestCase
     assert_not Product.new(title:"").save
    end  
 
+	test "title should be unique" do
+		product = Product.new
+	    duplicate_item = product.dup.save
+	    assert_not duplicate_item.valid?
+	end
+
    test "product without description" do 
     product = Product.new
     assert_not product.save, "Product saved without title"

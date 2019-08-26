@@ -2,7 +2,7 @@ class AddressesController < InheritedResources::Base
   before_action :set_address, only: [:show, :edit, :update, :destroy]
 
   def index
-	@addresses = current_user.addresses
+	@addresses = Address.all
   end
 
   # GET /addresses/1
@@ -20,7 +20,7 @@ class AddressesController < InheritedResources::Base
   end
 
   def create
-  	@address = current_user.addresses.new(address_params)
+  	@address = Address.new(address_params)
 
   	respond_to do |format|
   		if @address.save
@@ -36,7 +36,7 @@ class AddressesController < InheritedResources::Base
   private
 
   def set_address
-  @address = current_user.addresses.find(params[:id])
+  @address = Address.find(params[:id])
   end
 
   def address_params

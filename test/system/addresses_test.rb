@@ -1,15 +1,13 @@
 require "application_system_test_case"
 
 class AddressesTest < ApplicationSystemTestCase
-  setup do
-    @address = addresses(:one)
-  end
+  
+ 
 
   test "visiting the index" do
     visit addresses_url
     assert_selector "h1", text: "Addresses"
   end
-
   test "creating a Address" do
     visit addresses_url
     click_on "New Address"
@@ -48,4 +46,5 @@ class AddressesTest < ApplicationSystemTestCase
 
     assert_text "Address was successfully destroyed"
   end
+  
 end

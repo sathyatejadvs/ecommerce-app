@@ -86,17 +86,20 @@ hr {
     margin: 12rem;
   }
 
- .col-md-12 {
-  max-width: 100%;
-  margin-left: 1rem;
-}
+  .col-md-12 {
+    max-width: 100%;
+    margin-left: 1rem;
+  }
+  .navbar li {
+    font-size: 13px;
+  }
 }
 
 @media (width: 1024px) {
 
-.col-lg-12 {
+  .col-lg-12 {
     margin-top: 25rem;
-}
+  }
 }
 @media only (min-width: 315px) and (max-width: 376px) {
   .contact iframe{
@@ -112,8 +115,13 @@ h3, table, th, tr, td{
 }
 .mastfoot {
  position:fixed;
- bottom:0px;
+ bottom:0px;  
  left:0px;
  right:0px;
  width:100%;
+}
+@media  (min-width: 1024px) {
+  .contact {
+    margin-top: 6rem;
+  }
 }

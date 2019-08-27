@@ -12,4 +12,9 @@ class ProductsTest < ApplicationSystemTestCase
     assert_selector "img"
   end
 
+  test "visiting the Contact" do
+    visit products_url
+    click_on 'Contact'
+    click_on "Email me"
+  end
 end

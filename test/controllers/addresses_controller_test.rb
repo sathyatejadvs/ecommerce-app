@@ -7,4 +7,9 @@ class AddressesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get show" do 
+    get addresses_url(@address)
+    assert_response :success
+  end
+  
 end

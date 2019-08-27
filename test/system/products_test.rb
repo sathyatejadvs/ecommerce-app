@@ -15,6 +15,6 @@ class ProductsTest < ApplicationSystemTestCase
   test "visiting the Contact" do
     visit products_url
     click_on 'Contact'
-    click_on "Email me"
+    click_on "Home"
   end
 end

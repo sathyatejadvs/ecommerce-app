@@ -33,13 +33,13 @@ class AddressesTest < ApplicationSystemTestCase
     assert_text "Address was successfully updated"
   end
 
-  # test "destroying a Address" do
-  #   visit addresses_url
-  #   page.accept_confirm do
-  #     click_on "Destroy", match: :first
-  #   end
+  test "destroying a Address" do
+    visit addresses_url
+    page.accept_confirm do
+      click_on "Destroy", match: :prefer_exact
+    end
 
-  #   assert_text "Address was successfully destroyed"
-  # end
+    assert_text "Address was successfully destroyed"
+  end
   
 end

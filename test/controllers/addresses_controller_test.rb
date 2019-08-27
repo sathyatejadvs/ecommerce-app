@@ -15,8 +15,19 @@ class AddressesControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to address_url(Address.last)
   end
 
+  test "should get new" do
+    get new_address_url
+    assert_response :success
+  end
+
+  test " should get edit" do
+    get edit_address_url(Address.first)
+    assert_response :success
+  end
+
   test "should get show" do 
-    get addresses_url(@address)
+    get address_url(Address.first)
     assert_response :success
   end
 end
+ 

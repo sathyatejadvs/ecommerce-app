@@ -35,4 +35,11 @@ class AddressesControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to address_url(Address.first)
   end
 
+  test "should delete address" do
+    assert_difference('Address.count', -1) do
+      delete address_url(Address.last)
+    end
+    assert_redirected_to addresses_url
+  end
+
 end

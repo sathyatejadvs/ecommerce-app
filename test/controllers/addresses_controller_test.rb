@@ -20,7 +20,7 @@ class AddressesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test " should get edit" do
+  test "should get edit" do
     get edit_address_url(Address.first)
     assert_response :success
   end
@@ -29,5 +29,10 @@ class AddressesControllerTest < ActionDispatch::IntegrationTest
     get address_url(Address.first)
     assert_response :success
   end
+
+  test "should update address" do
+    put address_url(Address.first), params: {address: {address_line1: "AECS Layout", name: "Satyateja Daggubati"}}
+    assert_redirected_to address_url(Address.first)
+  end
+
 end
- 

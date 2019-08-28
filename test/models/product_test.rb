@@ -11,6 +11,11 @@ class ProductTest < ActiveSupport::TestCase
    test "product without description" do 
     product = Product.new
     assert_not product.save, "Product saved without title"
-   end 
-
+   end
+    
+   test "should have numeric price" do
+    product = Product.new(price: 'test')
+    assert_not product.valid?
+    assert_equal ["is not a number"], product.errors.messages[:price]
+  end
 end

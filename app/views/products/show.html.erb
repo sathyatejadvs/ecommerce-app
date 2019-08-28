@@ -1,29 +1,27 @@
-<div class= "row mt-2">
+<% present @product do |product_presenter| %>
+	<div class= "row mt-2">
+		<div class= "col-12 col-sm-7 col-md-7 show-banner">
+			<%= render "layouts/shared/products_banner" %>
+			<div class= "row">
+				<%= product_presenter.add_to_cart%>
+				<button class="btn btn-info ml-auto" type="button">
+					BUY NOW
+				</button>
+			</div>
+		</div>
 
-	<div class= "col-12 col-sm-7 col-md-7 show-banner">
-		<%= render "layouts/shared/products_banner" %>
-		<div class= "row">
-			
-			<%= link_to "ADD TO CART", new_user_session_path, class: "btn btn-warning ml-1 "%>
-			<button class="btn btn-info ml-auto" type="button">
-				BUY NOW
-			</button>
+		<div class= "col-12 col-sm-4 col-md-4 show-banner">
+			<h3>Title: </h3>
+			<p><%= @product.title %></p>
+			<hr>
+			<h3>Description: </h3>
+			<hr>
+			<p><%= @product.description %></p>
+			<h3>Price: </h3>
+			<hr>
+			<p>$<%= @product.price %></p>
+
+			<%= link_to 'Back', products_path %>
 		</div>
 	</div>
-
-	<div class= "col-12 col-sm-4 col-md-4 show">
-		<h3>Title: </h3>
-		<p><%= @product.title %></p>
-		<hr>
-		<h3>Description: </h3>
-		<hr>
-		<p><%= @product.description %></p>
-		<h3>Price: </h3>
-		<hr>
-		<p>$<%= @product.price %></p>
-
-		<%= link_to 'Back', products_path %>
-	</div>
-</div>
-
-
+<%end %>

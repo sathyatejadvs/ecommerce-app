@@ -9,8 +9,12 @@ class AdminUsersTest < ApplicationSystemTestCase
 	   fill_in('admin_user_password', :with => "ssssss")
 
 	   click_button 'Login'
-
+	   # page.must_include? "Signed in successfully."
 	   assert "Admin Loggedin"
+
+	   # visit admin_products_url
+	   # click_on "Products"
    end
+   
    
 end

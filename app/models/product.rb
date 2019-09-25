@@ -60,13 +60,13 @@ class Product
 
   #updating the price
   def set_price
-      puts "update price: "
-      self.price = gets  
-      puts "Updated price: #{self.price}, \nTitle: #{self.title}, \nDescription: #{self.description}"
+    puts "update price: "
+    self.price = gets  
+    puts "Updated price: #{self.price}, \nTitle: #{self.title}, \nDescription: #{self.description}"
   end
 
   #destroy an object
   def deleting_last_record
-    puts "lsfh"
+    puts "Deleted the product with title #{self.title}"
   end
 end

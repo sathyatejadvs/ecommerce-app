@@ -17,6 +17,7 @@ class Product
   before_validation :before_validation_method
   after_validation :after_validation_method
   before_save :before_saving_an_object
+  before_create :before_create
 
   private
 
@@ -34,7 +35,12 @@ class Product
   end
 
   def before_saving_an_object
-      puts "The product with #{self.title} is saved in database"
+    puts "The product with #{self.title} is saved in database"
+  end
+
+  def before_create
+    puts "Invoked before create method"
+    puts "Title is changed to #{self.title = "#{title.downcase}"}"
   end
 
 end

@@ -6,7 +6,7 @@ namespace :ecommerce_app do
   			title: "Sample product: #{i}",
   			description:"Sample description: #{i}",
   			price: "#{i*(2.3/5)}",
-  			main_image: "https://placehold.it/350x200"
+  			main_image: "https://placehold.it/#{350}x#{200}"
   			)
   	end
   end

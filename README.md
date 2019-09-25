@@ -28,3 +28,8 @@
     	- title and price combination should be uniq
  	4. clicking on the thumbnail should show the product image in a original image in a modal/lightbox.
 
+## Implementing callbaccks for:
+	* creating an object
+	* updating an object
+	* deleting an object
+

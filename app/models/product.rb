@@ -12,14 +12,20 @@ class Product
 
   validates :title, :description, presence: true
   validates :title, uniqueness: true
-  validates :price, format: { with:/\A\d+(?:\.\d{0,2})?\z/ }, numericality: { greater_than: 0, less_than: 1000000 }
+  validates :price, format: { with:/\A\d+(?:\.\d{0,2})?\z/ }, numericality: { greater_than: 0, less_than: 1000000 }, uniqueness: true
   
+  #Creating an object
   before_validation :before_validation_method
   after_validation :after_validation_method
   before_save :before_saving_an_object
   before_create :before_create
+  after_create :after_create 
+  after_save :after_saving
 
-  private
+  # updating an object
+  before_update :set_price
+
+  # private
 
   def before_validation_method
     puts "Invoked before validation and changed title to #{self.title = title.upcase}"
@@ -35,12 +41,24 @@ class Product
   end
 
   def before_saving_an_object
-    puts "The product with #{self.title} is saved in database"
+    puts "Invoked before_save and the product with #{self.title} is yet to be saved"
   end
 
   def before_create
     puts "Invoked before create method"
     puts "Title is changed to #{self.title = "#{title.downcase}"}"
+  end
+
+  def after_create
+    puts "Invoked After create method"
+  end
+
+  def after_saving
+    puts "invoking after saving method"
+  end
+
+  def set_price
+      puts "Updated price: #{self.price = "330.98"}, \nTitle: #{self.title}, \nDescription: #{self.description}"
   end
 
 end

@@ -25,7 +25,8 @@ class Product
   # updating an object
   before_update :set_price
 
-  # private
+  # Destroying an object
+  before_destroy :deleting_last_record
 
   def before_validation_method
     puts "Invoked before validation and changed title to #{self.title = title.upcase}"
@@ -57,8 +58,15 @@ class Product
     puts "invoking after saving method"
   end
 
+  #updating the price
   def set_price
-      puts "Updated price: #{self.price = "330.98"}, \nTitle: #{self.title}, \nDescription: #{self.description}"
+      puts "update price: "
+      self.price = gets  
+      puts "Updated price: #{self.price}, \nTitle: #{self.title}, \nDescription: #{self.description}"
   end
 
+  #destroy an object
+  def deleting_last_record
+    puts "lsfh"
+  end
 end

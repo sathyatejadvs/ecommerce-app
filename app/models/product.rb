@@ -16,19 +16,25 @@ class Product
   
   before_validation :before_validation_method
   after_validation :after_validation_method
+  before_save :before_saving_an_object
+
+  private
 
   def before_validation_method
-    puts "Invoked before validation"
-    puts self.title = title.upcase
-   end
+    puts "Invoked before validation and changed title to #{self.title = title.upcase}"
+  end
 
-   def after_validation_method
+  def after_validation_method
     if self.errors.any?
       puts "Validation failed when creating a product"
       puts self.errors.messages
     else 
       puts "Invoked after_validation method"
     end
-   end
+  end
+
+  def before_saving_an_object
+      puts "The product with #{self.title} is saved in database"
+  end
 
 end

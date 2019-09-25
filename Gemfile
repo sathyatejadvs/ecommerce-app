@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+
 #Using the mongo database
 gem 'activeadmin-mongoid'
 gem 'ransack-mongoid', github: 'activerecord-hackery/ransack-mongoid'
@@ -38,9 +39,10 @@ gem 'devise'
 gem 'magnifier-rails'
 gem 'active_skin'
 # Gem for UserInterface
+gem 'simple_form'
 gem 'bootstrap', '~> 4.3.1'
 gem "font-awesome-rails"
-
+gem 'draper'
 # For image uploading
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 gem 'jquery-rails'

@@ -5,12 +5,6 @@ ActiveAdmin.register Product do
 	config.filters = false
 	config.batch_actions = false
 
-	# index :as => :grid do |product|
-	#     div do
-	#   		product.main_image
- #    	end
-	# end
-
     form do |f|
 	    f.inputs do
 	      f.input :title
@@ -21,8 +15,4 @@ ActiveAdmin.register Product do
 		end
      f.actions
  	end
-	# sidebar :help do
-		 # "Need help? Email us at help@example.com"
-	# end
-	
 end

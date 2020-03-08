@@ -8,15 +8,14 @@ class ProductTest < ActiveSupport::TestCase
     assert_not Product.new(title:"").save
    end  
 
-	test "title should be unique" do
-		product = Product.new
-	    duplicate_item = product.dup.save
-	    assert_not duplicate_item.valid?
-	end
-
    test "product without description" do 
     product = Product.new
     assert_not product.save, "Product saved without title"
-   end 
-
+   end
+    
+   test "should have numeric price" do
+    product = Product.new(price: 'test')
+    assert_not product.valid?
+    assert_equal ["is not a number"], product.errors.messages[:price]
+  end
 end

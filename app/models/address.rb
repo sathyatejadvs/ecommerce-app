@@ -6,5 +6,4 @@ class Address
   field :address_line1, type: String
   field :address_line2, type: String
 
-  
 end
